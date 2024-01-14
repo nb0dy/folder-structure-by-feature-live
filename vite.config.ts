@@ -46,4 +46,10 @@ export default defineConfig({
       provider: 'v8',
     },
   },
+
+  resolve: {
+    alias: {
+      '@mui/styled-engine': '@mui/styled-engine-sc',
+    },
+  },
 });

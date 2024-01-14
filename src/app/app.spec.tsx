@@ -10,8 +10,6 @@ describe('App', () => {
 
   it('should have a greeting as the title', () => {
     const { getByText } = render(<App />);
-    expect(
-      getByText(/Welcome folder-structure-example-by-feature/gi)
-    ).toBeTruthy();
+    expect(getByText(/Welcome folder-structure-example-by-feature/gi)).toBeTruthy();
   });
 });

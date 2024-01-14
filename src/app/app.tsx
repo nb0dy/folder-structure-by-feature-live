@@ -1,16 +1,24 @@
-import styled from 'styled-components';
+// eslint-disable-next-line @softarc/sheriff/dependency-rule
+import { ThemeProvider } from '@mui/material';
+import { QueryClientProvider } from 'react-query';
+import { BrowserRouter } from 'react-router-dom';
 
-import NxWelcome from './nx-welcome';
-
-const StyledApp = styled.div`
-  // Your style here
-`;
+import { FullWidthLayout } from './full-layout';
+import { NotLoggedRoutes } from './router';
+import { queryClient } from './utils';
+import { theme } from './utils';
 
 export function App() {
   return (
-    <StyledApp>
-      <NxWelcome title="folder-structure-example-by-feature" />
-    </StyledApp>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <QueryClientProvider client={queryClient}>
+          <FullWidthLayout>
+            <NotLoggedRoutes />
+          </FullWidthLayout>
+        </QueryClientProvider>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 
