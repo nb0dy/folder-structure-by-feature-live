@@ -5,8 +5,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { FullWidthLayout } from './full-layout';
 import { NotLoggedRoutes } from './router';
-import { queryClient } from './utils';
-import { theme } from './utils';
+import { queryClient } from './shared/utils';
+import { theme } from './shared/utils';
 
 export function App() {
   return (

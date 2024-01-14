@@ -17,7 +17,7 @@ import {
 import { FC, ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 
-import { drawerWidth, routes } from './utils';
+import { drawerWidth, routes } from './shared/utils';
 
 const MenuItems = () => {
   return (

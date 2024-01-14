@@ -1,13 +1,13 @@
 // eslint-disable-next-line @softarc/sheriff/dependency-rule
 import { Route, Routes } from 'react-router-dom';
 
-import { DeviceDetails } from './containers/device-details';
-import { DeviceList } from './containers/device-list';
-import { LocationDetails } from './containers/location-details';
-import { LocationList } from './containers/location-list';
-import { NotificationDetails } from './containers/notification-details';
-import { NotificationList } from './containers/notification-list';
-import { routes } from './utils';
+import { DeviceDetails } from './features/device/containers/device-details';
+import { DeviceList } from './features/device/containers/device-list';
+import { LocationDetails } from './features/location/containers/location-details';
+import { LocationList } from './features/location/containers/location-list';
+import { NotificationDetails } from './features/notification/containers/notification-details';
+import { NotificationList } from './features/notification/containers/notification-list';
+import { routes } from './shared/utils';
 
 export const NotLoggedRoutes = () => {
   return (
