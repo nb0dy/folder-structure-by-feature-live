@@ -1,7 +1,7 @@
 import { useQuery } from 'react-query';
 import { PromiseValue } from 'type-fest';
 
-import { getHttpClient } from '../../../shared/utils';
+import { getHttpClient } from '../../utils';
 import { paths } from './api/device.api';
 import { deviceSchema, TDevice } from './api/device.dto';
 import { queryKey } from './api/device.query-key';

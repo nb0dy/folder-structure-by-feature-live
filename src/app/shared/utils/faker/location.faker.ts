@@ -1,7 +1,7 @@
 import { faker } from '@faker-js/faker';
 
 // eslint-disable-next-line @softarc/sheriff/deep-import
-import { TLocation } from '../../../features/location/data-access/api/location.dto';
+import { TLocation } from '../../data-access/location/api/location.dto';
 
 export const createLocation = (): TLocation => {
   return {

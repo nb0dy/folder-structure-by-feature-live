@@ -1,7 +1,7 @@
 import { useQuery } from 'react-query';
 import { PromiseValue } from 'type-fest';
 
-import { getHttpClient } from '../../../shared/utils';
+import { getHttpClient } from '../../utils';
 import { paths } from './api/location.api';
 import { locationsSchema, TLocation } from './api/location.dto';
 import { IFilterParams, queryKey } from './api/location.query-key';

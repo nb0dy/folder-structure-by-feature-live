@@ -1,15 +1,15 @@
 // eslint-disable-next-line @softarc/sheriff/deep-import
-import { paths as devicePaths } from '../../../features/device/data-access/api/device.api';
-// eslint-disable-next-line @softarc/sheriff/deep-import
-import { TDevice } from '../../../features/device/data-access/api/device.dto';
-// eslint-disable-next-line @softarc/sheriff/deep-import
-import { paths as locationPaths } from '../../../features/location/data-access/api/location.api';
-// eslint-disable-next-line @softarc/sheriff/deep-import
-import { TLocation } from '../../../features/location/data-access/api/location.dto';
-// eslint-disable-next-line @softarc/sheriff/deep-import
 import { paths as notificationPaths } from '../../../features/notification/data-access/api/notification.api';
 // eslint-disable-next-line @softarc/sheriff/deep-import
 import { TNotification } from '../../../features/notification/data-access/api/notification.dto';
+// eslint-disable-next-line @softarc/sheriff/deep-import
+import { paths as devicePaths } from '../../data-access/device/api/device.api';
+// eslint-disable-next-line @softarc/sheriff/deep-import
+import { TDevice } from '../../data-access/device/api/device.dto';
+// eslint-disable-next-line @softarc/sheriff/deep-import
+import { paths as locationPaths } from '../../data-access/location/api/location.api';
+// eslint-disable-next-line @softarc/sheriff/deep-import
+import { TLocation } from '../../data-access/location/api/location.dto';
 import { createDevice } from './device.faker';
 import { createLocation } from './location.faker';
 import { createNotification } from './notification.faker';

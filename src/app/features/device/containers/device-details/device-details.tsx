@@ -2,8 +2,8 @@ import { Box } from '@mui/material';
 import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useParams } from 'react-router-dom';
 
+import { useDevice } from '../../../../shared/data-access/device';
 import { Loader, TopBar } from '../../../../shared/ui';
-import { useDevice } from '../../data-access';
 
 const columns: GridColDef[] = [
   { field: 'id', headerName: 'ID', width: 90 },

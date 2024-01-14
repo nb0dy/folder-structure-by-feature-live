@@ -1,7 +1,7 @@
 import { faker } from '@faker-js/faker';
 
 // eslint-disable-next-line @softarc/sheriff/deep-import
-import { TDevice } from '../../../features/device/data-access/api/device.dto';
+import { TDevice } from '../../data-access/device/api/device.dto';
 
 export const createDevice = ({ locationId }: { locationId: string }): TDevice => {
   return {

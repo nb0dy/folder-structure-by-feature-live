@@ -2,8 +2,8 @@ import { Button, MenuItem, Select } from '@mui/material';
 import { styled } from '@mui/system';
 import { Controller, FormProvider, useForm } from 'react-hook-form';
 
-import { useDevices } from '../../../device/data-access';
-import { useLocations } from '../../../location/data-access';
+import { useDevices } from '../../../../shared/data-access/device';
+import { useLocations } from '../../../../shared/data-access/location';
 
 const Title = styled('div')(({ theme }) => ({
   paddingBottom: 10,
